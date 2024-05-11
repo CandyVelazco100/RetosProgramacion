@@ -17,9 +17,9 @@ class GfG{
 		Arrays.sort(ch2); 
 
 		for (int i = 0; i < n1; i++) {
-            if (ch1[i] != ch2[i]) 
-                return false; 
-        }
+			if (ch1[i] != ch2[i])
+				return false; 
+		}
 		return true; 
 	} 
 
@@ -28,11 +28,9 @@ class GfG{
         System.out.print("Ingresa una palabra: ");
         String str1 = lectura.next();
         String str2 = lectura.next();
-
 		if (arePermutation(str1, str2)) 
 		    System.out.println("Yes"); 
 		else
 		    System.out.println("No"); 
-
 	}
 } 
