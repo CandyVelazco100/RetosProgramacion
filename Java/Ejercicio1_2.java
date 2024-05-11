@@ -6,8 +6,7 @@ cannot use additional data structures?  */
 class Word{
 	int MAX_CHAR = 256; 
 
-	boolean uniqueCharacters(String str)
-	{
+	boolean uniqueCharacters(String str){
 		if (str.length() > MAX_CHAR)
 			return false;
 
@@ -26,13 +25,11 @@ class Word{
 		return true;
 	}
 
-	// Driver code
-	public static void main(String args[])
-	{
+	public static void main(String args[]){
 		Word obj = new Word();
-        Scanner lectura = new Scanner (System.in);
-        System.out.print("Ingresa una palabra: ");
-        String input = lectura.next();
+		Scanner lectura = new Scanner (System.in);
+		System.out.print("Ingresa una palabra: ");
+		String input = lectura.next();
 
 		if (obj.uniqueCharacters(input))
 			System.out.println("Caracteres unicos");
