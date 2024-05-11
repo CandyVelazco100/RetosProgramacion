@@ -16,18 +16,15 @@ class GFG{
 			count1[str1[i]]++;
 			count2[str2[i]]++;
 		}
-
 		if (str1.length != str2.length)
 			return false;
-            
-            if (count1[i] != count2[i])
+		if (count1[i] != count2[i])
 				return false;
 
 		return true;
 	} 
 
-	public static void main(String args[])
-	{
+	public static void main(String args[]){
 		char str1[] = ("geeksforgeeks").toCharArray();
 		char str2[] = ("forgeeksgeeks").toCharArray();
 		
